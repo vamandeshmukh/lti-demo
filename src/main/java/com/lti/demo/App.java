@@ -9,14 +9,13 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Employee emp = new Employee();
-		Employee emp2 = new Employee();
+		Employee emp = new Employee(101, "Sonu", 10.5);
+		Employee emp2 = new Employee(102, "Monu", 12.5);
 
 		System.out.println(emp.hashCode());
 		System.out.println(emp2.hashCode());
 		System.out.println(emp.equals(emp2));
 
-		
 		// ApplicationContext context = new
 		// AnnotationConfigApplicationContext(App.class);
 //
