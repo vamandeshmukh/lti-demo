@@ -7,10 +7,10 @@ public class App {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("SpringConfig.xml");
 
 		Employee emp = context.getBean(Employee.class);
-		
 		System.out.println(emp.toString());
 
 	}
