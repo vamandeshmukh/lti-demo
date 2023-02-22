@@ -5,10 +5,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
-		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("SpringConfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
+
+//		for (int i = 1; i <= 10; i++) {
+//			Thread.sleep(250);
+//			System.out.println(i);
+//		}
 
 		Employee emp = context.getBean(Employee.class);
 		System.out.println(emp.toString());
